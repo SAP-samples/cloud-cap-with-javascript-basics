@@ -1,41 +1,33 @@
-# SAP-samples/repository-template
-This default template for SAP Samples repositories includes files for README, LICENSE, and .reuse/dep5. All repositories on github.com/SAP-samples will be created based on this template.
+# SAP Cloud Application Programming Model with JavaScript Basics
 
-# Containing Files
-
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
-
-2. The .reuse/dep5 file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the .reuse/dep5 in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
-
-# [Title]
-<!-- Please include descriptive title -->
-
-<!--- Register repository https://api.reuse.software/register, then add REUSE badge:
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
--->
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/cloud-cap-with-javascript-basics)](https://api.reuse.software/info/github.com/SAP-samples/cloud-cap-with-javascript-basics)
 
 ## Description
-<!-- Please include SEO-friendly description -->
+
+This is an SAP Cloud Application Programming Model project that demonstrates how to integrate and use standard JavaScript within your CAP application.  It also teaches basic JavaScript techniques and language elements that will be helpful in CAP development. We also see how to add new Express middleware and routes to a single CAP service endpoint.
 
 ## Requirements
 
+This sample is based upon the SAP Cloud Application Programming version 7.x and higher.
+
 ## Download and Installation
 
+Project can be cloned and then ran using `npm start` from the root of the project. The default CAP test page will be accessible but also contain links to the applications and testing endpoints of this project.
+
 ## Known Issues
-<!-- You may simply state "No known issues. -->
+
+No known issues
 
 ## How to obtain support
-[Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
- 
+
+[Create an issue](https://github.com/SAP-samples/cloud-cap-with-javascript-basics/issues) in this repository if you find a bug or have questions about the content.
+
 For additional support, [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
 
 ## Contributing
+
 If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
 
 ## License
+
 Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
