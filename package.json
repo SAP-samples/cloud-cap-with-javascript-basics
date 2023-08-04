@@ -2,9 +2,9 @@
     "name": "cap-with-javascript-basics",
     "version": "1.0.0",
     "description": "A simple CAP project.",
-    "repository": "<Add your repository here>",
-    "license": "UNLICENSED",
-    "private": true,
+    "repository": "https://github.com/SAP-samples/cloud-cap-with-javascript-basics",
+    "license": "Apache-2.0",
+    "private": false,
     "type": "module",
     "engines": {
         "node": ">=16"
