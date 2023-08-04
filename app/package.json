@@ -1,0 +1,12 @@
+{
+	"name": "web-approuter",
+	"dependencies": {
+		"@sap/approuter": "^14",
+        "@sap/html5-repo-mock": "^2.1.5",
+		"dotenv": "^16"
+	},
+	"scripts": {
+		"start": "node node_modules/@sap/approuter/approuter.js",
+		"start-local": "node node_modules/@sap/html5-repo-mock/index.js"
+	}
+}
