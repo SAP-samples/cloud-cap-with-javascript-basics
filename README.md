@@ -12,7 +12,7 @@ This sample is based upon the SAP Cloud Application Programming version 7.x and 
 
 ## Download and Installation
 
-Project can be cloned and then ran using `npm start` from the root of the project. The default CAP test page will be accessible but also contain links to the applications and testing endpoints of this project.
+Project can be cloned, install dependencies via `npm install` and then ran using `npm start` from the root of the project. The default CAP test page will be accessible but also contain links to the applications and testing endpoints of this project.
 
 ## Known Issues
 
