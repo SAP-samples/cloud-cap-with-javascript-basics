@@ -1,19 +1,18 @@
 using { Currency, managed, sap } from '@sap/cds/common';
-using from '@sap/cds-common-content';
 namespace sap.capire.bookshop;
 
 entity Books : managed {
   key ID : Integer;
   @mandatory title  : localized String(111);
-  descr  : localized String(1111); 
+  descr  : localized String(1111);
   @mandatory author : Association to Authors;
   genre  : Association to Genres;
   stock  : Integer;
   price  : Decimal;
   currency : Currency;
   image : LargeBinary @Core.MediaType : 'image/png';
-} 
- 
+}
+
 entity Authors : managed {
   key ID : Integer;
   @mandatory name   : String(111);

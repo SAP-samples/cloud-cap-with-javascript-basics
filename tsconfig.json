@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "moduleResolution": "nodenext",
+    "module": "NodeNext",
     "paths": {
       "#cds-models/*": [
         "./@cds-models/*/index.ts"

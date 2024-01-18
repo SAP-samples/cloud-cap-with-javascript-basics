@@ -261,7 +261,7 @@ export function load(app) {
 	 *         description: Output
 	 */	    
 	app.get("/rest/ex2/cfApi", (req, res) => {
-		let VCAP = JSON.parse(process.env.VCAP_APPLICATION);
+		let VCAP = JSON.parse(process.env.VCAP_APPLICATION || `{"cf_api": "No VCAP_APPLICATION present in the environment"}`)
 		return res.type("application/json").status(200).send(JSON.stringify(VCAP.cf_api))
 	})
 
@@ -278,7 +278,7 @@ export function load(app) {
 	 *         description: Output
 	 */		
 	app.get("/rest/ex2/space", (req, res) => {
-		let VCAP = JSON.parse(process.env.VCAP_APPLICATION)
+		let VCAP = JSON.parse(process.env.VCAP_APPLICATION || `{"space_name": "No VCAP_APPLICATION present in the environment"}`)
 		return res.type("application/json").status(200).send(JSON.stringify(VCAP.space_name))
 	})
 

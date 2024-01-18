@@ -10,7 +10,7 @@ export function load(app){
 		var output =
 			`<H1>OS level Examples</H1></br> 
 			<a href="./osInfo">/osInfo</a></br>		
-			<a href="./whoami">/whoami</a></br>` +
+			<a href="./osUser">/whoami</a></br>` +
 			toc()
 		res.type("text/html").status(200).send(output)
 	})
@@ -60,7 +60,7 @@ export function load(app){
 	 *       '200':
 	 *         description: Output
 	 */		
-	app.get("/rest/ex2/osUser", (req, res, next) => {
+	app.get("/rest/os/osUser", (req, res, next) => {
 		var exec = child_process.exec
 		exec("whoami", (e, stdout) => {
 			if (e) {

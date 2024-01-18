@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Bookshop</title>
+	<script>
+		window["sap-ushell-config"] = {
+			defaultRenderer: "fiori2",
+			applications: {
+				"exercise-chat": {
+					title: "WebSocket Chat",
+					description: "Node.js WebSocket Exercise",
+					additionalInformation: "SAPUI5.Component=sap.sample.exerciseChat",
+					applicationType: "URL",
+					url: "/resources/exerciseChat",
+					navigationMode: "embedded"
+				},
+				"exercise-async": {
+					title: "Node.js Asynchronous",
+					description: "Node.js Asynchronous Exercise",
+					additionalInformation: "SAPUI5.Component=sap.sample.exerciseAsync",
+					applicationType: "URL",
+                    "targetURL": "#exercise-async",
+					url: "/resources/exerciseAsync",
+					navigationMode: "embedded"
+				},
+				"exercise-multiply": {
+					title: "Multiply Exercise",
+					description: "Simple Server Side Multiplication",
+					additionalInformation: "SAPUI5.Component=sap.sample.multiply",
+					applicationType: "URL",
+					url: "/resources/multiply",
+					navigationMode: "embedded"
+				},
+				"swagger-ui": {
+					title: "Swagger API Tester",
+					description: "Test REST Services via Swagger UI",
+					applicationType: "URL",
+					url: "/apiJS/api-docs",
+					navigationMode: "embedded"
+				},
+				"status-ui": {
+					title: "System Monitoring",
+					description: "System Status for Node.js Process",
+					applicationType: "URL",
+					url: "/status"
+				},
+				"rest-toc": {
+					title: "Rest Service TOC",
+					description: "Rest Service Table of Contents",
+					applicationType: "URL",
+					url: "/rest/ex2/toc/"
+				},
+				"cap-graphql": {
+					title: "GraphQL",
+					description: "CAP GraphQL",
+						applicationType: "URL",
+					url: "/graphql/",
+					navigationMode: "embedded"
+				}
+			}
+		};
+	</script>
+
+	<script src="https://ui5.sap.com/test-resources/sap/ushell/bootstrap/sandbox.js"></script>
+	<script src="https://ui5.sap.com/resources/sap-ui-core.js"
+        data-sap-ui-resourceroots='{
+				"sap.sample": "./resources",
+                "sap.sample.common": "./resources/common",
+                "common": "./resources/common"}'		
+        data-sap-ui-libs="sap.m, sap.ushell, sap.collaboration, sap.ui.layout" data-sap-ui-compatVersion="edge"
+		data-sap-ui-theme="sap_horizon" data-sap-ui-frameOptions="allow"></script>
+	<script>
+		if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			sap.ui.getCore().applyTheme("sap_horizon_dark")
+		}
+		sap.ui.getCore().attachInit(function () {
+			sap.ushell.Container.createRenderer().placeAt('content')
+			sap.ui
+				.getCore()
+				.getConfiguration()
+				.setFlexibilityServices([{
+					connector: "SessionStorageConnector"
+				}])
+		})
+	</script>
+
+</head>
+
+<body class="sapUiBody" id="content"></body>
+
+</html>

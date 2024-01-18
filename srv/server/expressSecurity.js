@@ -3,14 +3,14 @@ import helmet from 'helmet'
 export default function (app) {
     app.log(`Add Helmet`)
     app.use(helmet())
-    app.use(helmet.contentSecurityPolicy({
+     app.use(helmet.contentSecurityPolicy({
         directives: {
-            defaultSrc: ["'self'", "*.hana.ondemand.com", "ui5.sap.com"],
-            styleSrc: ["'self'", "*.hana.ondemand.com", "ui5.sap.com", "'unsafe-inline'"],
-            scriptSrc: ["'self'", "*.hana.ondemand.com", "ui5.sap.com", "'unsafe-inline'", "'unsafe-eval'", "cdnjs.cloudflare.com"],
-            imgSrc: ["'self'", "*.hana.ondemand.com", "ui5.sap.com", "*.loc.gov", "data:"]
+            defaultSrc: ["'self'", "*.hana.ondemand.com", "ui5.sap.com", "unpkg.com"],
+            styleSrc: ["'self'", "*.hana.ondemand.com", "ui5.sap.com", "unpkg.com", "'unsafe-inline'"],
+            scriptSrc: ["'self'", "*.hana.ondemand.com", "ui5.sap.com", "unpkg.com", "'unsafe-inline'", "'unsafe-eval'", "cdnjs.cloudflare.com"],
+            imgSrc: ["'self'", "*.hana.ondemand.com", "ui5.sap.com", "unpkg.com", "*.loc.gov", "data:"]
         }
-    }))
+    })) 
     // Sets "Referrer-Policy: no-referrer".
     app.use(helmet.referrerPolicy({ policy: "no-referrer" }))
 
