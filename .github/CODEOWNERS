@@ -1,0 +1,20 @@
+# Code Owners and Repository Access
+
+This file documents the repository access model and serves as the GitHub
+[CODEOWNERS](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+declaration for review routing.
+
+## Maintainers (admins)
+
+Repository administration is intentionally limited to a small set of SAP DevRel
+team members who are responsible for the lifecycle of this sample. All
+non-trivial changes go through pull requests protected by the branch ruleset on
+`main`.
+
+* @jung-thomas
+
+## Default code owners
+
+Pull requests automatically request review from the maintainer above.
+
+*       @jung-thomas
