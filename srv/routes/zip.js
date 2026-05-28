@@ -118,7 +118,7 @@ export function load(app) {
      *       '500':
      *         description: General DB Error 
      */
-    app.get("/rest/zip/zipBooks2/:format?", async (req, res, next) => {
+    app.get("/rest/zip/zipBooks2{/:format}", async (req, res, next) => {
         try {
             let dbQuery = SELECT
                 .from(cds.entities.Books)

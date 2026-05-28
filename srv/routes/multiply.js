@@ -25,7 +25,7 @@ export function load(app) {
      *       '200':
      *         description: Results
      */
-    app.get('/rest/multiply/:num1?/:num2?', async (req, res) => {
+    app.get('/rest/multiply{/:num1}{/:num2}', async (req, res) => {
 
         let body = ""
         let num1 = 0
