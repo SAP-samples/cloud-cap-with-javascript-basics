@@ -26,7 +26,7 @@ export function load(app) {
      *       '200':
      *         description: Results
      */
-    app.get('/rest/outboundTest/:search/:index?', async (req, res, next) => {
+    app.get('/rest/outboundTest/:search{/:index}', async (req, res, next) => {
 
         let search = req.params.search
         let index = 0
