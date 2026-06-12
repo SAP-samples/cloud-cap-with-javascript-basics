@@ -1,9 +1,9 @@
 {
 	"name": "web-approuter",
 	"dependencies": {
-		"@sap/approuter": "^14",
-        "@sap/html5-repo-mock": "^2.1.5",
-		"dotenv": "^16"
+		"@sap/approuter": "^22",
+		"@sap/html5-repo-mock": "^2.2.6",
+		"dotenv": "^17"
 	},
 	"scripts": {
 		"start": "node node_modules/@sap/approuter/approuter.js",
